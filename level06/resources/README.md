@@ -1,6 +1,5 @@
 In our home directory, we have an executable with extended permissions and a PHP script that reveals what the executable does.
 
-
 ```
 level06@SnowCrash:~$ ls -la level06*
 -rwsr-x---+ 1 flag06 level06 7503 Aug 30  2015 level06

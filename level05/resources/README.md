@@ -25,6 +25,6 @@ We can't use vim to write a script there because we don't have rights, but can u
 and we wait 2mn for the script to execut.
 then we just have to do: 
 ```
-flag01@SnowCrash:~$ cat /tmp/getflag
+flag05@SnowCrash:~$ cat /tmp/getflag
 viuaaale9huek52boumoomioc
 ```
