@@ -27,10 +27,16 @@ int main(int argc, char **argv)
     return (1);
 }
 ```
-We run it and obtain the token:
+we need to get the token file:
+```
+scp -P 4242 level09@10.0.2.15:~/token .
+```
+
+We compile and run the program to obtain the token:
 
 ```
-level09@SnowCrash:~$ ./nekot `cat token`
+level09@SnowCrash:~$ gcc ./nekot.c -o nekto
+level09@SnowCrash:~$ nekto `cat token`
 Password is: f3iji1ju5yuevaus41q1afiuq
 ```
 Now we just have to connect as flag09 and launch getflag
