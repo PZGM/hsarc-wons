@@ -18,7 +18,7 @@ scp -P 4242 level01@[ip]:/etc/passwd .
 ```
 We use john the ripper(a password decryption tool shown in the video) :
 ```
-john passwd
+john passwd --show
 ```
 
 you will get an output like this:
