@@ -26,5 +26,5 @@ and we wait 2mn for the script to execut.
 then we just have to do: 
 ```
 flag01@SnowCrash:~$ cat /tmp/getflag
-f2av5il02puano7naaf6adaaf
+viuaaale9huek52boumoomioc
 ```
