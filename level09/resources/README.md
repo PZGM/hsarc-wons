@@ -27,15 +27,12 @@ int main(int argc, char **argv)
     return (1);
 }
 ```
-
-```
 We run it and obtain the token:
 
 ```
 level09@SnowCrash:~$ ./reverse_hash `cat token`
 Password is: f3iji1ju5yuevaus41q1afiuq
 ```
-
 Now we just have to connect as flag09 and launch getflag
 
 ```
