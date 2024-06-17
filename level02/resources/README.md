@@ -5,7 +5,7 @@ $:/Snowcrash# ~/level02/ressources # scp -P 4242 scp://level02@192.168.0.169/lev
 level02.pcap    100% 8302    10.1MB/s   00:00
 ```
 
-Current rights are insufficient to run level02.pcap with Wireshark, so let's give all users the right to read, write and execute.
+Our current permissions are insufficient to run level02.pcap with Wireshark. To resolve this, let's grant all users read, write, and execute permissions.
 
 ```
 $:/Snowcrash# ~/level02/ressources # ls -la level02.pcap
