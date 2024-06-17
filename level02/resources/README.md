@@ -13,24 +13,13 @@ $:/Snowcrash# ~/level02/ressources # ls -la level02.pcap
 $:/Snowcrash# ~/level02/Ressources # chmod 777 level02.pcap
 ```
 
-If you open the level02.pcap file, you will see a stream of packets, follow tcp stream and choose utf-8
+If you open the level02.pcap file, you will see a stream of packets, follow tcp stream and choose ASCII you'll find a line with:
 ```
-..%..%..&..... ..#..'..$..&..... ..#..'..$.. .....#.....'........... .38400,38400....#.SodaCan:0....'..DISPLAY.SodaCan:0......xterm.........."........!........"..".....b........b....	B.
-..............................1.......!.."......"......!..........."........"..".............	..
-.....................
-Linux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)
-
-..wwwbugs login: l.le.ev.ve.el.lX.X
-..
 Password: ft_wandr...NDRel.L0L
-.
-..
-Login incorrect
-wwwbugs login:
 ```
 
-# login = l
-# password = ft_wandrNDRelL0L
+We use hexdump to analyze the token file and identify the problematic characters shown as a dot.
+We notice that 7F represents the deletion key. By removing the correct 7F entries, we uncover the decrypted token: ft_waNDReL0L.
 
 ```
 level02@Snowcrash:~$ su flag02
