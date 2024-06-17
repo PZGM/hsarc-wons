@@ -13,8 +13,8 @@ level08@SnowCrash:~$ ./level08
 When we test the executable with a file we own, it displays the file's content:
 
 ```
-level08@SnowCrash:~$ echo '42' ./test
-level08@SnowCrash:~$./level08 ./test
+level08@SnowCrash:~$ echo '42' > /tmp/test
+level08@SnowCrash:~$./level08 /tmp/test
 42
 ```
 
