@@ -16,14 +16,14 @@ get it
 ```
 scp -P 4242 level01@[ip]:/etc/passwd .
 ```
-john the ripper out of it (a famous password decryption tool) :
+We use john the ripper(a password decryption tool shown in the video) :
 ```
 john passwd
 ```
 
 you will get an output like this:
 ```
-$:/Snowcrash# john level01/Ressources/passwd
+$:/Snowcrash# john level01/ressources/passwd
 Loaded 1 password hash (descrypt, traditional crypt(3) [DES 128/128 SSE2-16])
 Press 'q' or Ctrl-C to abort, almost any other key for status
 abcdefg          (flag01)
