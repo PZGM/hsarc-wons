@@ -1,7 +1,7 @@
 In our home directory, we find a `.pcap` file, which contains packet data captured over a network. To analyze this file, we need to use Wireshark. However, before we can do that, we must download the file:
 
 ```
-$:/Snowcrash# ~/level02/ressources # scp -P 4242 scp://level02@192.168.0.169/level02.pcap level02.pcap
+$:/Snowcrash# ~/level02/ressources # scp -P 4242 scp://level02@[ip]/level02.pcap level02.pcap
 level02.pcap    100% 8302    10.1MB/s   00:00
 ```
 
