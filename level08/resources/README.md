@@ -28,7 +28,7 @@ You may not access 'token'
 Since we don't receive a Linux permission error, it's possible that the level08 executable restricts access based on the file name. To bypass this, we can try using a symlink:
 
 ```
-level08@SnowCrash:~$ ln -s ~/token /tmp/test
-level08@SnowCrash:~$ ./level08 /tmp/test
+level08@SnowCrash:~$ ln -s ~/token /tmp/tset
+level08@SnowCrash:~$ ./level08 /tmp/tset
 25749xKZ8L7DkSCwJkT9dyv6f
 ```
